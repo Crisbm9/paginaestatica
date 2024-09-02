@@ -1,5 +1,6 @@
 import React from 'react';
 import Carrusel from '../components/carrusel';
+import "./index.css"
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
@@ -15,21 +16,24 @@ import pic8 from '../images/presi.jpeg';
 import logo from '../images/images.png';
 import Scroll from '../components/Scroll';
 import ca from '../images/Presidenta.jpg';
+import ca1 from '../images/ca1.jpg';
 import ao from '../images/actos.jpg';
 import f1 from '../images/felipe1.jpg';
 import f2 from '../images/felipe2.jpg';
 import f3 from '../images/felipe3.jpg';
 import f4 from '../images/felipe4.jpg';
 import f5 from '../images/felipe5.jpg';
+import l1 from '../images/leticia1.jpg';
+import l2 from '../images/leticia2.jpg';
 
 const sections = [
   { id: 'portfolio', name: 'Conoce nuestra historia' },
-  { id: 'portfolio', name: 'Bienvenida de la Presidenta' },
-  { id: 'about', name: 'Consejo de Administración' },
-  { id: 'contact', name: 'Actos oficiales e institucionales' },
-  { id: 'contact', name: 'Casa de S.M. el Rey' },
-  { id: 'contact', name: 'Retratos oficiales' },
-  { id: 'contact', name: 'Ministerio de la Presidencia' }
+  { id: 'about', name: 'Bienvenida de la Presidenta' },
+  { id: 'ca', name: 'Consejo de Administración' },
+  { id: 'ao', name: 'Actos oficiales e institucionales' },
+  { id: 'smr', name: 'Casa de S.M. el Rey' },
+  { id: 'ro', name: 'Retratos oficiales' },
+  { id: 'mp', name: 'Ministerio de la Presidencia' }
 
 ];
 
@@ -122,7 +126,7 @@ const IndexPage = () => (
           <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic2} alt="" />
                 </a>
                 <header>
@@ -130,7 +134,7 @@ const IndexPage = () => (
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic3} alt="" />
                 </a>
                 <header>
@@ -140,7 +144,7 @@ const IndexPage = () => (
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic4} alt="" />
                 </a>
                 <header>
@@ -148,7 +152,7 @@ const IndexPage = () => (
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic5} alt="" />
                 </a>
                 <header>
@@ -158,7 +162,7 @@ const IndexPage = () => (
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic6} alt="" />
                 </a>
                 <header>
@@ -166,7 +170,7 @@ const IndexPage = () => (
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={pic7} alt="" />
                 </a>
                 <header>
@@ -211,7 +215,7 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="about" className="three">
+      <section id="ca" className="three">
         <div className="container">
           <header>
             <h2>Consejo de Administración</h2>
@@ -242,9 +246,10 @@ const IndexPage = () => (
             <p>
             Ha sido miembro de los siguientes Consejos de Administración e instituciones nacionales e internacionales: consejera de la Casa de la Moneda y Timbre, consejera de Expansión Exterior (actualmente ICEX), Consejera de la Compañía Española de Crédito a la Exportación (CESCE), consejera de RENFE, consejera de la Sociedad Estatal de Participaciones Industriales (SEPI), consejera de la Autoridad Macroprudencial Consejo de Estabilidad Financiera (AMCESFI), gobernadora alterna por España en el Grupo Banco Mundial, en el Banco Interamericano de Desarrollo, el Banco Centroamericano de Integración Económica, el Banco Asiático de Desarrollo, el Banco Asiático para Inversión en Infraestructuras, el Banco Africano de Desarrollo y el Banco Europeo de Reconstrucción y Desarrollo, presidenta de la Comisión para la prevención del blanqueo de capitales y las infracciones monetarias, miembro de la Comisión de Coordinación del Plan de Recuperación, Transformación y Resiliencia.
             </p>
-
-            <h4>MARÍA DOLORES MENÉNDEZ COMPANY</h4>
+            <div className='div1'>
+            <h3>MARÍA DOLORES MENÉNDEZ COMPANY</h3>
             <p>GERENTE DE PATRIMONIO NACIONAL</p>
+            <img src={ca1} alt="" />
             <p>
             Es Licenciada en Ciencias Económicas y Empresariales, rama de Economía de la Empresa, por la Universidad Complutense de Madrid. Funcionaria en servicio activo de la Escala Técnica de Gestión de Organismos Autónomos y en excedencia del Cuerpo Técnico de Auditoría y Contabilidad, Executive Master in Public Administration EMPA. ESADE.    
             </p>        
@@ -254,12 +259,12 @@ const IndexPage = () => (
             <p>
             Miembro del Consejo de Administración del Centro para el Desarrollo Tecnológico Industrial E.P.E. (CDTI).
             </p>
-
+            </div>
           
         </div>
       </section>
 
-      <section id="about" className="three">
+      <section id="ao" className="three">
         <div className="container">
           <header>
             <h2>Actos Oficiales</h2>
@@ -283,94 +288,99 @@ const IndexPage = () => (
             </p>
         </div>
       </section>
-      <section id="about" className="three">
+      <section id="ro" className="three">
       <div className="container">
       <header>
-            <h2>Retratos Oficiales</h2>
+            <h2>Retratos de SS.MM.</h2>
           </header>
       <div className="row">
+      <h3>RETRATOS OFICIALES DE SU MAJESTAD EL REY</h3>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={f1} alt="" />
                 </a>
                 <header>
-                  <h3>Ipsum Feugiat</h3>
+                  <h3>S.M. el Rey
+                  © Casa de S.M. el Rey</h3>
+                  
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={f2} alt="" />
                 </a>
                 <header>
-                  <h3>Rhoncus Semper</h3>
+                  <h3>S.M. el Rey con indumentaria de gala en el Palacio Real de Madrid
+                  © Casa de S.M. el Rey</h3>
                 </header>
               </article>
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={f3} alt="" />
                 </a>
                 <header>
-                  <h3>Magna Nullam</h3>
+                  <h3>S.M. EL REY CON UNIFORME DE DIARIO DE CAPITÁN GENERAL DEL EJÉRCITO DE TIERRA
+                  © Casa de S.M. el Rey</h3>
                 </header>
               </article>
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={f4} alt="" />
                 </a>
                 <header>
-                  <h3>Natoque Vitae</h3>
+                  <h3>S.M. EL REY CON UNIFORME DE DIARIO DE CAPITÁN GENERAL DE LA ARMADA
+                  © Casa de S.M. el Rey</h3>
                 </header>
               </article>
             </div>
             <div className="col-4 col-12-mobile">
               <article className="item">
-                <a href="/#" className="image fit">
+                <a href="#" className="image fit">
                   <img src={f5} alt="" />
                 </a>
                 <header>
-                  <h3>Dolor Penatibus</h3>
+                  <h3>S.M. EL REY CON UNIFORME DE DIARIO DE CAPITÁN GENERAL DEL EJÉRCITO DEL AIRE
+                  © Casa de S.M. el Rey</h3>
                 </header>
               </article>
             </div>
           </div>
+
+          <h3>RETRATOS OFICIALES DE SU MAJESTAD LA REINA</h3>
+          <div className="row">
+            <div className="col-4 col-12-mobile">
+              <article className="item">
+                <a href="#" className="image fit">
+                  <img src={l1} alt="" />
+                </a>
+                <header>
+                  <h3>S.M. la Reina
+                  © Casa de S.M. el Rey</h3>
+                  
+                </header>
+              </article>
+              <article className="item">
+                <a href="#" className="image fit">
+                  <img src={l2} alt="" />
+                </a>
+                <header>
+                  <h3>S.M. la Reina con indumentaria de gala en el Palacio Real de Madrid
+                  © Casa de S.M. el Rey</h3>
+                </header>
+              </article>
+            </div>
+            
+           
+            </div>
+
+
           </div>
       </section>
 
-      <section id="contact" className="four">
-        <div className="container">
-          <header>
-            <h2>Contact</h2>
-          </header>
-
-          <p>
-            The element of time, sem ante ullamcorper dolor nulla quam placerat
-            viverra environment is not with our customers. Free makeup and skirt
-            until the mouse. Japan this innovative and ultricies carton salad
-            clinical ridiculous now passes from enhanced. Mauris pot innovative
-            care for my pain.
-          </p>
-
-          <form method="post" action="#">
-            <div className="row">
-              <div className="col-6 col-12-mobile">
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div className="col-6 col-12-mobile">
-                <input type="text" name="email" placeholder="Email" />
-              </div>
-              <div className="col-12">
-                <textarea name="message" placeholder="Message" />
-              </div>
-              <div className="col-12">
-                <input type="submit" value="Send Message" />
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
+      
     </div>
 
     <PageFooter />
