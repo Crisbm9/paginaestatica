@@ -362,7 +362,10 @@ const IndexPage = () => (
                   
                 </header>
               </article>
-              <article className="item">
+              
+            </div>
+            <div className="col-4 col-12-mobile">
+            <article className="item">
                 <a href="#" className="image fit">
                   <img src={l2} alt="" />
                 </a>
@@ -371,8 +374,7 @@ const IndexPage = () => (
                   © Casa de S.M. el Rey</h3>
                 </header>
               </article>
-            </div>
-            
+              </div>
            
             </div>
 
