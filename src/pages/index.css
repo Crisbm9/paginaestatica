@@ -36,7 +36,35 @@
 }
 
 .col-41 {
-  flex: 1 1 calc(25% - 20px); /* 4 columns layout */
-  max-width: calc(25% - 20px); /* Ensures each column is 25% width minus the gap */
+  flex: 1 1 calc(25% - 20px); 
+  max-width: calc(25% - 20px); 
   box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  .col-41 {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .col-41 {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+  }
+
+  .div1 img {
+    width: 100px; 
+    height: 120px; 
+  }
+
+  .div1 h3 {
+    font-size: 16px; 
+  }
+
+  .div1 p {
+    font-size: 12px; 
+  }
 }

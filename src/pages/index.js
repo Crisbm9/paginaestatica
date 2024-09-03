@@ -32,6 +32,10 @@ import f4 from '../images/felipe4.jpg';
 import f5 from '../images/felipe5.jpg';
 import l1 from '../images/leticia1.jpg';
 import l2 from '../images/leticia2.jpg';
+import r1 from '../images/reyes1.jpg';
+import r2 from '../images/reyes2.jpg';
+import H1 from '../images/hija1.jpg';
+import H2 from '../images/hija2.jpg';
 
 const sections = [
   { id: 'portfolio', name: 'Conoce nuestra historia' },
@@ -384,8 +388,8 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <h3>RETRATOS OFICIALES DE SU MAJESTAD LA REINA</h3>
           <div className="row">
+            <h3>RETRATOS OFICIALES DE SU MAJESTAD LA REINA</h3>
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
@@ -413,6 +417,62 @@ const IndexPage = () => (
            
             </div>
 
+            <div className="row">
+            <h3>RETRATOS OFICIALES DE SUS MAJESTADES LOS REYES</h3>
+            <div className="col-4 col-12-mobile">
+              <article className="item">
+                <a href="#" className="image fit">
+                  <img src={r1} alt="" />
+                </a>
+                <header>
+                  <h3>SS.MM. los Reyes
+                  © Casa de S.M. el Rey</h3>
+                  
+                </header>
+              </article>
+              
+            </div>
+            <div className="col-4 col-12-mobile">
+            <article className="item">
+                <a href="#" className="image fit">
+                  <img src={r2} alt="" />
+                </a>
+                <header>
+                  <h3>SS.MM. los Reyes con indumentaria de gala en el Palacio Real de Madrid</h3>
+                </header>
+              </article>
+              </div>
+           
+            </div>
+
+            <div className="row">
+            <h3>RETRATOS OFICIALES DE SU ALTEZA REAL LA PRINCESA DE ASTURIAS Y DE SU ALTEZA REAL LA INFANTA DOÑA SOFÍA</h3>
+            <div className="col-4 col-12-mobile">
+              <article className="item">
+                <a href="#" className="image fit">
+                  <img src={H1} alt="" />
+                </a>
+                <header>
+                  <h3>S.A.R. la Princesa de Asturias
+                  © Casa de S.M. el Rey</h3>
+                  
+                </header>
+              </article>
+              
+            </div>
+            <div className="col-4 col-12-mobile">
+            <article className="item">
+                <a href="#" className="image fit">
+                  <img src={H2} alt="" />
+                </a>
+                <header>
+                  <h3>S.A.R. la Infanta Doña Sofía
+                  © Casa de S.M. el Rey</h3>
+                </header>
+              </article>
+              </div>
+           
+            </div>
 
           </div>
       </section>
