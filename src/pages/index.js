@@ -17,6 +17,13 @@ import logo from '../images/images.png';
 import Scroll from '../components/Scroll';
 import ca from '../images/Presidenta.jpg';
 import ca1 from '../images/ca1.jpg';
+import ca2 from '../images/ca2.jpg';
+import ca3 from '../images/ca3.jpg';
+import ca4 from '../images/ca4.jpg';
+import ca5 from '../images/ca5.jpg';
+import ca6 from '../images/ca6.jpg';
+import ca7 from '../images/ca7.jpg';
+import ca8 from '../images/ca8.jpg';
 import ao from '../images/actos.jpg';
 import f1 from '../images/felipe1.jpg';
 import f2 from '../images/felipe2.jpg';
@@ -246,19 +253,47 @@ const IndexPage = () => (
             <p>
             Ha sido miembro de los siguientes Consejos de Administración e instituciones nacionales e internacionales: consejera de la Casa de la Moneda y Timbre, consejera de Expansión Exterior (actualmente ICEX), Consejera de la Compañía Española de Crédito a la Exportación (CESCE), consejera de RENFE, consejera de la Sociedad Estatal de Participaciones Industriales (SEPI), consejera de la Autoridad Macroprudencial Consejo de Estabilidad Financiera (AMCESFI), gobernadora alterna por España en el Grupo Banco Mundial, en el Banco Interamericano de Desarrollo, el Banco Centroamericano de Integración Económica, el Banco Asiático de Desarrollo, el Banco Asiático para Inversión en Infraestructuras, el Banco Africano de Desarrollo y el Banco Europeo de Reconstrucción y Desarrollo, presidenta de la Comisión para la prevención del blanqueo de capitales y las infracciones monetarias, miembro de la Comisión de Coordinación del Plan de Recuperación, Transformación y Resiliencia.
             </p>
-            <div className='div1'>
+            <div className='row1'>
+            <div className='div1 col-41'>
             <h3>MARÍA DOLORES MENÉNDEZ COMPANY</h3>
-            <p>GERENTE DE PATRIMONIO NACIONAL</p>
+            <p>GERENTE</p>
             <img src={ca1} alt="" />
-            <p>
-            Es Licenciada en Ciencias Económicas y Empresariales, rama de Economía de la Empresa, por la Universidad Complutense de Madrid. Funcionaria en servicio activo de la Escala Técnica de Gestión de Organismos Autónomos y en excedencia del Cuerpo Técnico de Auditoría y Contabilidad, Executive Master in Public Administration EMPA. ESADE.    
-            </p>        
-            <p>
-            Ha trabajado como Subdirectora General de Administración Financiera y Oficialía Mayor en el Ministerio de Asuntos Económicos y Transformación Digital. Ha sido Secretaria General del Consejo Superior de Deportes y del Instituto Español de Oceanografía y Subdirectora General Adjunta de Administración Económica en la Secretaría General de la Dirección General de Tráfico.            
-            </p>
-            <p>
-            Miembro del Consejo de Administración del Centro para el Desarrollo Tecnológico Industrial E.P.E. (CDTI).
-            </p>
+            </div>
+            <div className='div1 col-41'>
+            <h3>ANA MARÍA ARIAS DE COSSÍO</h3>
+            <p>CONSEJERA</p>
+            <img src={ca2} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>FRANCISCO BELIL CREIXELL</h3>
+            <p>CONSEJERO</p>
+            <img src={ca3} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>Mª ÁNGELES HERMOSILLA ÁLVAREZ</h3>
+            <p>CONSEJERA</p>
+            <img src={ca4} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>ALBERTO HERRERA RODRÍGUEZ</h3>
+            <p>CONSEJERO</p>
+            <img src={ca5} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>MARÍA DEL CARMEN IGLESIAS CANO</h3>
+            <p>CONSEJERA</p>
+            <img src={ca6} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>GREGORIO MARAÑÓN Y BERTRÁN DE LIS</h3>
+            <p>CONSEJERO</p>
+            <img src={ca7} alt="" />
+            </div>
+            <div className='div1 col-41'>
+            <h3>JUDIT ALEXANDRA GONZÁLEZ PEDRAZ</h3>
+            <p>CONSEJERA</p>
+            <img src={ca8} alt="" />
+            </div>
             </div>
           
         </div>
