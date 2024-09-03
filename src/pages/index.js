@@ -337,12 +337,13 @@ const IndexPage = () => (
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
-                  <img src={f1} alt="" />
+                  <img src={f4} alt="" />
                 </a>
                 <header>
-                  <h3>S.M. el Rey
-                  © Casa de S.M. el Rey</h3>
-                  
+                  {/* <h3>S.M. el Rey
+                  © Casa de S.M. el Rey</h3> */}
+                   <h3>S.M. EL REY CON UNIFORME DE DIARIO DE CAPITÁN GENERAL DE LA ARMADA
+                   © Casa de S.M. el Rey</h3>
                 </header>
               </article>
               <article className="item">
@@ -367,11 +368,11 @@ const IndexPage = () => (
               </article>
               <article className="item">
                 <a href="#" className="image fit">
-                  <img src={f4} alt="" />
+                  <img src={f1} alt="" />
                 </a>
                 <header>
-                  <h3>S.M. EL REY CON UNIFORME DE DIARIO DE CAPITÁN GENERAL DE LA ARMADA
-                  © Casa de S.M. el Rey</h3>
+                <h3>S.M. el Rey
+                © Casa de S.M. el Rey</h3>
                 </header>
               </article>
             </div>
