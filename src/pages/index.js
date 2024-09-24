@@ -42,9 +42,7 @@ const sections = [
   { id: 'about', name: 'Bienvenida de la Presidenta' },
   { id: 'ca', name: 'Consejo de Administración' },
   { id: 'ao', name: 'Actos oficiales e institucionales' },
-  { id: 'smr', name: 'Casa de S.M. el Rey' },
   { id: 'ro', name: 'Retratos oficiales' },
-  { id: 'mp', name: 'Ministerio de la Presidencia' }
 
 ];
 
@@ -56,12 +54,7 @@ const IndexPage = () => (
       <section id="top" className="one dark cover">
         <div className="container">
           <header>
-            {/* <h2 className="alt">
-              <strong>Patrimonio Nacional</strong>
-              <br />
-              
-            </h2> */}
-            <img height="250px" src={logo} alt="" />
+            <img className='imagenlogo' height="250px" src={logo} alt="" />
             <p>
                
               Somos una institución histórico-cultural única en el mundo. Cuidamos de más de 1.000 inmuebles, 170.000 piezas artísticas y 18.000 hectáreas de espacios verdes de gran riqueza medioambiental. Y lo hacemos con una doble misión: preservar y dar a conocer este valiosísimo legado y facilitar a la jefatura del Estado la labor representativa que le otorga nuestra Constitución.
@@ -332,8 +325,9 @@ const IndexPage = () => (
       <header>
             <h2>Retratos de SS.MM.</h2>
           </header>
-      <div className="row">
+      
       <h3>RETRATOS OFICIALES DE SU MAJESTAD EL REY</h3>
+      <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
@@ -389,8 +383,9 @@ const IndexPage = () => (
             </div>
           </div>
 
+          <h3>RETRATOS OFICIALES DE SU MAJESTAD LA REINA</h3>
           <div className="row">
-            <h3>RETRATOS OFICIALES DE SU MAJESTAD LA REINA</h3>
+
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
@@ -416,10 +411,10 @@ const IndexPage = () => (
               </article>
               </div>
            
-            </div>
+          </div>
+            <h3>RETRATOS OFICIALES DE SUS MAJESTADES LOS REYES</h3>
 
             <div className="row">
-            <h3>RETRATOS OFICIALES DE SUS MAJESTADES LOS REYES</h3>
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
@@ -446,8 +441,9 @@ const IndexPage = () => (
            
             </div>
 
-            <div className="row">
             <h3>RETRATOS OFICIALES DE SU ALTEZA REAL LA PRINCESA DE ASTURIAS Y DE SU ALTEZA REAL LA INFANTA DOÑA SOFÍA</h3>
+
+            <div className="row">
             <div className="col-4 col-12-mobile">
               <article className="item">
                 <a href="#" className="image fit">
